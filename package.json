@@ -1,0 +1,15 @@
+{
+  "name": "CUrriculo do Torto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "torto",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
