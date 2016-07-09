@@ -1,0 +1,20 @@
+{
+  "name": "CUrriculo do Torto",
+  "description": "",
+  "main": "js/init.js",
+  "authors": [
+    "torto"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/torto/curriculo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.6"
+  }
+}

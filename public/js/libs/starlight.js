@@ -10,7 +10,7 @@ Licence: MIT
 
 //put your custom configuration settings here
 var user_configuration={
-	shape:"square", //could be "circle" or "square"
+	shape:"circle", //could be "circle" or "square"
 	initial_size:"12px", //initial size of the stars
 	final_size:"64px", //final size of the stars after expansion
 	expand_speed:"1s", //how fast the stars get bigger, in milliseconds
@@ -18,9 +18,9 @@ var user_configuration={
 	fade_duration:"0.5s", //how long the star fades for
 	colors:["hsla(62, 50%,50%, 0.5)", "rgba(255,255,255,0.5)","hsla(180, 72%, 52%, 0.5)"], //The variety of colors of the stars. Can be any CSS complient color (eg. HEX, rgba, hsl)
 	frequency:100, //how often a new wave of stars pop-out (in milliseconds. Bigger==longer)
-	density: 1,//how many stars pop out per wave
+	density: 3,//how many stars pop out per wave
 	keep_lit: false, //whether the stars disappear after they are created
-	rotation: true, //whether the stars rotate through out their expansion
+	rotation: false, //whether the stars rotate through out their expansion
 	coverage:1, //how much of the element's area the stars will show up in (0-1)
 	target_class:'.starlight', //the elements the script will target based on the class name
 	custom_svg:"" //if you want to use a custom svg with a shape of a star instead (not supported yet)
@@ -115,7 +115,7 @@ Star.prototype.create=function(parent_element,id){
     }
 
 		},10);
-	
+
 	//sets shape and color of the star
 	if(user_configuration.shape==='circle'){
 		star.css('border-radius','50%');
@@ -151,11 +151,11 @@ function css_time_to_milliseconds(time_string) {
   var num = parseFloat(time_string, 10),
       unit = time_string.match(/m?s/),
       milliseconds;
- 
+
   if (unit) {
     unit = unit[0];
   }
- 
+
   switch (unit) {
     case "s": // seconds
       milliseconds = num * 1000;
@@ -167,6 +167,6 @@ function css_time_to_milliseconds(time_string) {
       milliseconds = 0;
       break;
   }
- 
+
   return milliseconds;
 }
