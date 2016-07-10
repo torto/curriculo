@@ -8,7 +8,8 @@ var app = {};
         reloadButtons();
 
         $('.change-second').click(function() {
-            changePage('second-page.html');
+            // changePage('second-page.html');
+            changePage('page-tres.html');
         });
     }
 
@@ -20,7 +21,10 @@ var app = {};
         switch (page) {
             case 'second-page.html':
                 setTimeout(app.secondPage.init(),0);
-                break;
+            break;
+            case 'page-tres.html':
+                setTimeout(app.pageTres.init(),0);
+            break;
             default:
         }
     }

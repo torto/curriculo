@@ -4,8 +4,8 @@ html, body {
     padding: 0;
     margin: 0;
 }
-.hide{
-  visibility: hidden;
+.hide {
+    visibility: hidden;
 }
 .starlight {
     width: 85%;
@@ -17,72 +17,94 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.page{
-  width: 100%;
-  min-width: 100%;
+.page {
+    width: 100%;
+    min-width: 100%;
 }
-.full-button{
-  width: 100%;
+.full-button {
+    width: 100%;
 }
 
 /* -------INDEX--------*/
-.first-page{
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding: 20px;
-  background: #FE4365;
 
+.first-page {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: #FE4365;
 }
-.bottom-page{
-  bottom: 40px;
-  position: absolute;
+.bottom-page {
+    bottom: 40px;
+    position: absolute;
 }
-.first-page .me-drink{
-  max-width: 600px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -70%);
+.first-page .me-drink {
+    max-width: 600px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -70%);
 }
 
 /* -------SECOND PAGE--------*/
-.second-page{
-  background: #5adcff;
-  /*min-height: 900px;*/
+
+.second-page {
+    background: #5adcff;
+    /*min-height: 900px;*/
 }
-.second-page .cloud,
-.second-page .montains,
-.second-page .text
-{
-  max-width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 2;
+.second-page .cloud, .second-page .montains, .second-page .text {
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
 }
-.second-page .cloud{
-  position: relative;
-  z-index: 1;
+.second-page .cloud {
+    position: relative;
+    z-index: 1;
+}
+.second-page .text {
+    max-width: 100%;
+    width: 0;
+    top: 90%;
+    left: 30%;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.second-page .me-horse {
+    max-width: 100%;
+    width: 0;
+    top: 0;
+    left: -100%;
+    position: absolute;
+    z-index: 2;
 }
 
-.second-page .text
-{
-  max-width: 100%;
-  width: 0;
-  top: 90%;
-  left: 30%;
-  display: none;
-  position: absolute;
-  z-index: 1;
+/* ------- PAGE TRES--------*/
+
+.page-tres .elements {
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.page-tres .animation {
+    animation: visibleElement 3s;
+    animation-play-state: paused;
+}
+.page-tres .play {
+    animation-play-state: running;
 }
 
-.second-page .me-horse{
-  max-width: 100%;
-  width: 0;
-  top: 0;
-  left: -100%;
-  position: absolute;
-  z-index: 2;
+/*---------- ANIMATIONS -----------*/
+
+@keyframes visibleElement {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
