@@ -60,18 +60,22 @@ html, body {
   top: 0;
   left: 0;
   position: absolute;
+  z-index: 2;
 }
 .second-page .cloud{
   position: relative;
+  z-index: 1;
 }
 
 .second-page .text
 {
   max-width: 100%;
   width: 0;
-  top: 100%;
-  left: 50%;
+  top: 90%;
+  left: 30%;
+  display: none;
   position: absolute;
+  z-index: 1;
 }
 
 .second-page .me-horse{
@@ -80,4 +84,5 @@ html, body {
   top: 0;
   left: -100%;
   position: absolute;
+  z-index: 2;
 }
