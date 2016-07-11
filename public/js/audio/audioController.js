@@ -3,9 +3,45 @@ if (!app) {
     app = {};
 }
 app.audio = (function($) {
+    var audio, arrayImgs = 0;
+
+    function init(){
+      loadVariables();
+    }
+
+    function loadVariables(){
+      audio = $('#audioTrack');
+    }
 
     function updateListenerMusic(track) {
         console.log(formatSecondsAsTime(track.currentTime));
+    }
+
+    function checkPauseOrPlay(){
+      console.log(arrayImgs);
+      checkPause(++arrayImgs);
+    }
+
+    function checkPause(value){
+      switch (value) {
+        case 1:
+          // playAudio();
+          break;
+        case 4:
+          setTimeout(app.secondPage.init(),0);
+          playAudio();
+          break;
+        default:
+          pauseAudio();
+      }
+    }
+
+    function pauseAudio(){
+      audio[0].pause();
+    }
+
+    function playAudio(){
+      audio[0].play();
     }
 
     function formatSecondsAsTime(secs, format) {
@@ -22,8 +58,13 @@ app.audio = (function($) {
 
         return min + ':' + sec;
     }
+
+    init();
+
     return {
-        updateListenerMusic: updateListenerMusic
+        updateListenerMusic: updateListenerMusic,
+        checkPauseOrPlay : checkPauseOrPlay,
+        pauseAudio : pauseAudio
     };
 
-})();
+})(jQuery);

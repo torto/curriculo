@@ -24,6 +24,12 @@ html, body {
 .full-button {
     width: 100%;
 }
+.elements {
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
 
 /* -------INDEX--------*/
 
@@ -51,7 +57,6 @@ html, body {
 
 .second-page {
     background: #5adcff;
-    /*min-height: 900px;*/
 }
 .second-page .cloud, .second-page .montains, .second-page .text {
     max-width: 100%;
@@ -84,18 +89,30 @@ html, body {
 
 /* ------- PAGE TRES--------*/
 
-.page-tres .elements {
-    max-width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-}
 .page-tres .animation {
     animation: visibleElement 3s;
     animation-play-state: paused;
 }
 .page-tres .play {
     animation-play-state: running;
+}
+
+/* ------- PAGE QUATRO--------*/
+.page-quatro{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #a8fef3;
+}
+
+.page-quatro .chapeu{
+  animation: rotateChapeu 3s;
+}
+
+/* ------- PAGE CINCO--------*/
+.page-cinco .mapa{
+  animation: mapa 5s;
 }
 
 /*---------- ANIMATIONS -----------*/
@@ -106,5 +123,27 @@ html, body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes rotateChapeu {
+    0% {
+        transform:rotate(360deg);
+    }
+    100% {
+        transform:rotate(0deg);
+    }
+}
+
+@keyframes mapa {
+    0% {
+        top: 100%;
+        display: none;
+    }
+    1%{
+      display: block;
+    }
+    100% {
+        top: 0;
     }
 }

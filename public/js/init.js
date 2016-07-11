@@ -1,7 +1,7 @@
 var app = {};
 (function($) {
   'use strict';
-    var body;
+    var body, bLazy;
 
     function init() {
         initVariables();
@@ -9,7 +9,9 @@ var app = {};
 
         $('.change-second').click(function() {
             // changePage('second-page.html');
-            changePage('page-tres.html');
+            // changePage('page-tres.html');
+            // changePage('page-quatro.html');
+            changePage('page-cinco.html');
         });
     }
 
@@ -18,15 +20,25 @@ var app = {};
     }
 
     function reloadButtons(page) {
+      // if(app.audio){
+      //   app.audio.pauseAudio();
+      // }
         switch (page) {
             case 'second-page.html':
-                setTimeout(app.secondPage.init(),0);
+                app.secondPage.init();
             break;
             case 'page-tres.html':
-                setTimeout(app.pageTres.init(),0);
+                app.pageTres.init();
+            break;
+            case 'page-quatro.html':
+                app.pageQuatro.init();
+            break;
+            case 'page-cinco.html':
+                app.pageCinco.init();
             break;
             default:
         }
+
     }
 
     function removePage(callback) {

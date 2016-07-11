@@ -3,8 +3,9 @@ if(!app){
   app = {};
 }
 app.secondPage = (function($){
+  var omundo, encantado, de, tortolandia, horse;
+
   function loadSecondPage() {
-      var omundo, encantado, de, tortolandia, cavalo;
       omundo = $('.o-mundo');
       encantado = $('.encantado');
       de = $('.de');
@@ -25,7 +26,7 @@ app.secondPage = (function($){
                 width: "easeOutBounce"
             },
             complete: function() {
-                setTimeout(app.changePage('page-tres.html'), 3000);
+                setTimeout(function(){app.changePage('page-tres.html');}, 3000);
             }
         });
       }, 4000);
