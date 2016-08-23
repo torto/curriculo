@@ -2,12 +2,12 @@
 if (!app) {
     app = {};
 }
-app.pageQuatro = (function($) {
+app.pageDez = (function($) {
 
     function init() {
-      app.loadImagens('quatro', '.page-quatro');
+      app.loadImagens('dez', '.page-dez');
       setTimeout(function(){
-        app.changePage('page-cinco.html');
+        // app.changePage('page-onze.html');
       }, 6000);
     }
 

@@ -2,13 +2,13 @@
 if (!app) {
     app = {};
 }
-app.pageQuatro = (function($) {
+app.pageOito = (function($) {
 
     function init() {
-      app.loadImagens('quatro', '.page-quatro');
+      app.loadImagens('oito', '.page-oito');
       setTimeout(function(){
-        app.changePage('page-cinco.html');
-      }, 6000);
+        app.changePage('page-nove.html');
+      },8000);
     }
 
 

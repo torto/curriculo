@@ -7,16 +7,6 @@ html, body {
 .hide {
     visibility: hidden;
 }
-.starlight {
-    width: 85%;
-    height: 80%;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 .page {
     width: 100%;
     min-width: 100%;
@@ -30,29 +20,18 @@ html, body {
     left: 0;
     position: absolute;
 }
+.relative{
+  position: relative;
+}
 
 /* -------INDEX--------*/
 
 .first-page {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    background: #FE4365;
-}
-.bottom-page {
-    bottom: 40px;
-    position: absolute;
-}
-.first-page .me-drink {
-    max-width: 600px;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -70%);
-}
 
+}
+.ajust-buttom{
+  margin-top: -180px;
+}
 /* -------SECOND PAGE--------*/
 
 .second-page {
@@ -106,13 +85,22 @@ html, body {
   background: #a8fef3;
 }
 
-.page-quatro .chapeu{
+.page-quatro .chapeu,
+.page-dez .chapeu{
   animation: rotateChapeu 3s;
 }
 
 /* ------- PAGE CINCO--------*/
-.page-cinco .mapa{
+.page-cinco .mapa,
+.page-oito .mapa{
   animation: mapa 5s;
+}
+
+/* ------- PAGE SEIS--------*/
+.page-seis .letra{
+  animation: letraMovimento 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 /*---------- ANIMATIONS -----------*/
@@ -129,9 +117,13 @@ html, body {
 @keyframes rotateChapeu {
     0% {
         transform:rotate(360deg);
+        width: 50%;
+        top: 50%;
     }
     100% {
         transform:rotate(0deg);
+        width: 100%;
+        top: 0%;
     }
 }
 
@@ -145,5 +137,23 @@ html, body {
     }
     100% {
         top: 0;
+    }
+}
+
+@keyframes letraMovimento {
+    0% {
+      transform: rotate(0deg);
+    }
+    25%{
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
     }
 }
