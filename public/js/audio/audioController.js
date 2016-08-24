@@ -1,20 +1,25 @@
+(function(){
+
 'use sctrit';
 if (!app) {
     app = {};
 }
 app.audio = (function($) {
-    var audio, arrayImgs = 0;
+    var audio, arrayImgs = 0, elemTrad, textDefault='pt-BR';
 
     function init(){
       loadVariables();
+
     }
 
     function loadVariables(){
       audio = $('#audioTrack');
+      elemTrad = document.querySelector("#traducao");
     }
 
     function updateListenerMusic(track) {
         console.log(formatSecondsAsTime(track.currentTime));
+        traducao(formatSecondsAsTime(track.currentTime));
     }
 
     function checkPauseOrPlay(){
@@ -59,12 +64,22 @@ app.audio = (function($) {
         return min + ':' + sec;
     }
 
+    function traducao(valor){
+      if(traducaoElements[textDefault][valor]){
+        elemTrad.innerHTML = traducaoElements[textDefault][valor];
+      }
+    }
+
+
     init();
 
     return {
         updateListenerMusic: updateListenerMusic,
         checkPauseOrPlay : checkPauseOrPlay,
-        pauseAudio : pauseAudio
+        pauseAudio : pauseAudio,
+        playAudio: playAudio
     };
 
 })(jQuery);
+
+})();

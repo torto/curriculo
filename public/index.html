@@ -9,39 +9,50 @@
 
     </head>
     <body>
-        <div class="page first-page">
-            <img class="elements relative" src="img/apresentacao/fundo.jpg" alt="init"/>
-            <img class="elements" src="img/apresentacao/tortinhu.gif" alt="init"/>
-            <div class="container ajust-buttom">
-                <div class="row">
-                    <div class="col s6 offset-s3">
-                        <a class="waves-effect waves-light btn-large full-button green darken-2 change-second">Começar a aventura</a>
+        <button id="btn-sair">Sair do modo full screen</button>
+        <div id="page-central">
+            <div class="page first-page">
+                <img class="elements relative" src="img/apresentacao/fundo.jpg" alt="init"/>
+                <img class="elements" src="img/apresentacao/tortinhu.gif" alt="init"/>
+                <div class="container ajust-buttom">
+                    <div class="row">
+                        <div class="col s6 offset-s3">
+                            <a class="waves-effect waves-light btn-large full-button green darken-2 change-second">Começar a aventura</a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="traducao">
+                <p id="traducao">
+                    Bem vindo
+                </p>
+            </div>
         </div>
-
         <audio id="audioTrack" src="audio/teste.ogg" ontimeupdate="app.audio.updateListenerMusic(this);">
-            O seu navegador não suporta o elemento <code>audio</code>.
-        </audio>
-
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
-        <script src="js/libs/starlight.js" charset="utf-8"></script>
-        <script src="js/libs/blazy.min.js" charset="utf-8"></script>
-        <script src="js/pre-images.js" charset="utf-8"></script>
-        <script src="js/init.js" charset="utf-8"></script>
-        <script src="js/audio/audioController.js" charset="utf-8"></script>
-        <script src="js/page-dois/page-dois.js" charset="utf-8"></script>
-        <script src="js/page-tres/page-tres.js" charset="utf-8"></script>
-        <script src="js/page-quatro/page-quatro.js" charset="utf-8"></script>
-        <script src="js/page-cinco/page-cinco.js" charset="utf-8"></script>
-        <script src="js/page-seis/page-seis.js" charset="utf-8"></script>
-        <script src="js/page-sete/page-sete.js" charset="utf-8"></script>
-        <script src="js/page-oito/page-oito.js" charset="utf-8"></script>
-        <script src="js/page-nove/page-nove.js" charset="utf-8"></script>
-        <script src="js/page-dez/page-dez.js" charset="utf-8"></script>
+            <track label="Portugues" kind="subtitles" srclang="pt" src="audio/teste.srt" default>
+                O seu navegador não suporta o elemento
+                <code>audio</code>.
+            </audio>
 
 
-    </body>
-</html>
+            <script src="bower_components/jquery/dist/jquery.min.js"></script>
+            <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+            <script src="js/libs/starlight.js" charset="utf-8"></script>
+            <script src="js/libs/blazy.min.js" charset="utf-8"></script>
+            <script src="js/pre-images.js" charset="utf-8"></script>
+            <script src="js/traducao.js" charset="utf-8"></script>
+            <script src="js/init.js" charset="utf-8"></script>
+            <script src="js/audio/audioController.js" charset="utf-8"></script>
+            <script src="js/page-dois/page-dois.js" charset="utf-8"></script>
+            <script src="js/page-tres/page-tres.js" charset="utf-8"></script>
+            <script src="js/page-quatro/page-quatro.js" charset="utf-8"></script>
+            <script src="js/page-cinco/page-cinco.js" charset="utf-8"></script>
+            <script src="js/page-seis/page-seis.js" charset="utf-8"></script>
+            <script src="js/page-sete/page-sete.js" charset="utf-8"></script>
+            <script src="js/page-oito/page-oito.js" charset="utf-8"></script>
+            <script src="js/page-nove/page-nove.js" charset="utf-8"></script>
+            <script src="js/page-dez/page-dez.js" charset="utf-8"></script>
+
+        </body>
+    </html>

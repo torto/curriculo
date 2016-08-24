@@ -4,6 +4,9 @@ html, body {
     padding: 0;
     margin: 0;
 }
+#btn-sair {
+  display:none;
+}
 .hide {
     visibility: hidden;
 }
@@ -88,6 +91,7 @@ html, body {
 .page-quatro .chapeu,
 .page-dez .chapeu{
   animation: rotateChapeu 3s;
+  will-change: transform;
 }
 
 /* ------- PAGE CINCO--------*/
@@ -101,6 +105,27 @@ html, body {
   animation: letraMovimento 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  will-change: transform;
+}
+
+/* ------- PAGE SEIS--------*/
+.traducao{
+  position: absolute;
+  top: 90%;
+  display: none;
+  z-index: 1000;
+  width: 500px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Arial';
+  font-size: 20px;
+  color: yellow;
+  text-align: center;;
+}
+#traducao{
+  padding: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /*---------- ANIMATIONS -----------*/
@@ -142,18 +167,18 @@ html, body {
 
 @keyframes letraMovimento {
     0% {
-      transform: rotate(0deg);
+      transform: rotate3d(0,0,0,0deg);
     }
     25%{
-      transform: rotate(5deg);
+      transform: rotate3d(0,0,0,5deg);
     }
     50% {
-      transform: rotate(0deg);
+      transform: rotate3d(0,0,0,0deg);
     }
     75% {
-      transform: rotate(-5deg);
+      transform: rotate3d(0,0,0,-5deg);
     }
     100% {
-      transform: rotate(0deg);
+      transform: rotate3d(0,0,0,0deg);
     }
 }
