@@ -5,7 +5,7 @@ if (!app) {
     app = {};
 }
 app.audio = (function($) {
-    var audio, arrayImgs = 0, elemTrad, textDefault='pt-BR';
+    var audio, arrayImgs = 0, elemTrad;
 
     function init(){
       loadVariables();
@@ -65,8 +65,8 @@ app.audio = (function($) {
     }
 
     function traducao(valor){
-      if(traducaoElements[textDefault][valor]){
-        elemTrad.innerHTML = traducaoElements[textDefault][valor];
+      if(traducaoElements[app.textDefault][valor]){
+        elemTrad.innerHTML = traducaoElements[app.textDefault][valor];
       }
     }
 

@@ -2,13 +2,17 @@ var app = {};
 (function($) {
     'use strict';
     var body, bLazy, pageCentral, oFs = {};
-
+    app.textDefault = 'pt-BR';
     function init() {
         initVariables();
         loadFull();
         reloadButtons();
         preloadImages(imagens);
         $('.change-second').click(function() {
+            mixpanel.track("Paginas Acessadas",{
+              "page": "Click Botão Inicial"
+            });
+            app.textDefault = $('select').val() === null ? 'pt-BR' : $('select').val();
             oFs.requestFullScreen(pageCentral[0]);
             $('.traducao').css('display', 'block');
             changePage('second-page.html');
@@ -28,6 +32,7 @@ var app = {};
         app.images = {};
         body = $('body');
         pageCentral = $('#page-central');
+        $('select').material_select();
     }
 
     function reloadButtons(page) {
@@ -148,6 +153,8 @@ var app = {};
     app.changePage = changePage;
     app.loadImagens = loadImagens;
     app.fullScreen = oFs;
+    $(document).ready(function() {
+      init();
+    });
 
-    init();
 })(jQuery);

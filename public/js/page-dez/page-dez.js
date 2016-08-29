@@ -5,6 +5,9 @@ if (!app) {
 app.pageDez = (function($) {
 
     function init() {
+      mixpanel.track("Paginas Acessadas",{
+        "page": "Anal. Desv. Sistemas"
+      });
       app.loadImagens('dez', '.page-dez');
       setTimeout(function(){
         // app.changePage('page-onze.html');

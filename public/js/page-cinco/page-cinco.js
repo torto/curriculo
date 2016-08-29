@@ -5,6 +5,9 @@ if (!app) {
 app.pageCinco = (function($) {
 
     function init() {
+      mixpanel.track("Paginas Acessadas",{
+        "page": "Beltrão"
+      });
       app.loadImagens('cinco', '.page-cinco');
       setTimeout(function(){
         app.changePage('page-seis.html');

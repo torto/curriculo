@@ -26,7 +26,11 @@ html, body {
 .relative{
   position: relative;
 }
-
+.language{
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+}
 /* -------INDEX--------*/
 
 .first-page {

@@ -6,6 +6,9 @@ app.secondPage = (function($) {
     var omundo, encantado, de, tortolandia, horse;
 
     function loadSecondPage() {
+      mixpanel.track("Paginas Acessadas",{
+        "page": "Spot Inicial"
+      });
       app.loadImagens('dois', '.second-page');
         omundo = $('.o-mundo');
         encantado = $('.encantado');
