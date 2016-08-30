@@ -13,7 +13,7 @@ app.pageTres = (function($) {
       setTimeout(visibleMedio, 2000);
       setTimeout(visibleVeio, 4000);
       setTimeout(function(){
-        app.changePage('page-quatro.html');
+        // app.changePage('page-quatro.html');
       },8000);
     }
 

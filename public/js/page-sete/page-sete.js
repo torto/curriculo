@@ -10,7 +10,7 @@ app.pageSete = (function($) {
       });
       app.loadImagens('sete', '.page-sete');
       setTimeout(function(){
-        app.changePage('page-oito.html');
+        // app.changePage('page-oito.html');
       },8000);
     }
 

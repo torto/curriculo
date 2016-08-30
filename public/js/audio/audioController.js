@@ -19,6 +19,7 @@ app.audio = (function($) {
 
     function updateListenerMusic(track) {
         console.log(formatSecondsAsTime(track.currentTime));
+        mudarPage(formatSecondsAsTime(track.currentTime));
         traducao(formatSecondsAsTime(track.currentTime));
     }
 
@@ -67,6 +68,12 @@ app.audio = (function($) {
     function traducao(valor){
       if(traducaoElements[app.textDefault][valor]){
         elemTrad.innerHTML = traducaoElements[app.textDefault][valor];
+      }
+    }
+
+    function mudarPage(valor) {
+      if(changeImages[valor]){
+        changeImages[valor]();
       }
     }
 

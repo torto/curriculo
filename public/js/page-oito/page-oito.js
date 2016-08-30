@@ -10,7 +10,7 @@ app.pageOito = (function($) {
       });
       app.loadImagens('oito', '.page-oito');
       setTimeout(function(){
-        app.changePage('page-nove.html');
+        // app.changePage('page-nove.html');
       },8000);
     }
 
