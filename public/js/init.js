@@ -8,7 +8,7 @@ if(!window.app){
     function init() {
         initVariables();
         loadFull();
-        preloadImages(imagens);
+        preloadImages(app.imagens);
         $('.change-second').click(function() {
             mixpanel.track("Paginas Acessadas",{
               "page": "Click Botão Inicial"
@@ -30,7 +30,7 @@ if(!window.app){
     }
 
     function initVariables() {
-        app.images = {};
+        app.imagesLoad = {};
         body = $('body');
         pageCentral = $('#page-central');
         $('select').material_select();
@@ -100,21 +100,21 @@ if(!window.app){
         // {elem, url, alt, class}
         var i = 0;
         for (i; i < array.length; i++) {
-            if (!app.images[array[i].elem]) {
-                app.images[array[i].elem] = {};
+            if (!app.imagesLoad[array[i].elem]) {
+                app.imagesLoad[array[i].elem] = {};
             }
-            app.images[array[i].elem][array[i].alt] = new Image();
-            app.images[array[i].elem][array[i].alt].src = array[i].url;
-            app.images[array[i].elem][array[i].alt].className = array[i].class;
-            app.images[array[i].elem][array[i].alt].alt = array[i].alt;
+            app.imagesLoad[array[i].elem][array[i].alt] = new Image();
+            app.imagesLoad[array[i].elem][array[i].alt].src = array[i].url;
+            app.imagesLoad[array[i].elem][array[i].alt].className = array[i].class;
+            app.imagesLoad[array[i].elem][array[i].alt].alt = array[i].alt;
         }
     }
 
     function loadImagens(elem, classInject) {
       var classInjectLocal = document.querySelector(classInject);
-        for (var i = 0; i < imagens.length; i++) {
-            if (imagens[i].elem === elem) {
-                classInjectLocal.appendChild(app.images[imagens[i].elem][imagens[i].alt]);
+        for (var i = 0; i < app.imagens.length; i++) {
+            if (app.imagens[i].elem === elem) {
+                classInjectLocal.appendChild(app.imagesLoad[app.imagens[i].elem][app.imagens[i].alt]);
             }
         }
     }

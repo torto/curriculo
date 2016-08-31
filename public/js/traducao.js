@@ -6,7 +6,7 @@ if(!window.app){
     app.traducaoElements = {
         'pt-BR': {
             '00:00': 'Oi meu nome é Guilherme, mais conhecido como Torto,',
-            '00:05': 'nasci em foz do iguaçu e faço aniversário dia 25 de novembro',
+            '00:05': 'nasci em Foz do Iguaçu e faço aniversário dia 25 de novembro',
             '00:08': 'DE TODO ANO, em 2016 faço 28 anos.',
             '00:12': 'Agora convido vocês a conhecerem um pouco mais sobre mim.',
             '00:18': 'Bem vindos ao mundo encantado de Tortolândia',

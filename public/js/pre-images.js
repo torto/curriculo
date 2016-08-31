@@ -1,6 +1,9 @@
+if(!window.app){
+	window.app = {};
+}
 (function() {
 
-    imagens = [
+    app.imagens = [
         // {elem, url, alt, classs}
         {
             elem: 'dois',
@@ -145,6 +148,59 @@
 						url: "img/page-nove/animacao.gif",
 						alt: "animacao",
 						class: "elements"
+				},
+        {
+						elem: 'nove',
+						url: "img/page-nove/angular.png",
+						alt: "angular",
+						class: "elements animation angular"
+				},
+        {
+						elem: 'nove',
+						url: "img/page-nove/css.png",
+						alt: "css",
+						class: "elements animation css"
+				},
+        {
+						elem: 'nove',
+						url: "img/page-nove/grunt.png",
+						alt: "grunt",
+						class: "elements animation grunt"
+				},
+        {
+						elem: 'nove',
+						url: "img/page-nove/gulp.png",
+						alt: "gulp",
+						class: "elements animation gulp"
+				},
+        {
+						elem: 'nove',
+						url: "img/page-nove/html.png",
+						alt: "html",
+						class: "elements animation html"
+				},
+        {
+						elem: 'nove',
+						url: "img/page-nove/java.png",
+						alt: "java",
+						class: "elements animation java"
+				},
+        {
+						elem: 'nove',
+						url: "img/page-nove/javascript.png",
+						alt: "javascript",
+						class: "elements animation javascript"
+				},
+        {
+						elem: 'nove',
+						url: "img/page-nove/nodejs.png",
+						alt: "nodejs",
+						class: "elements animation nodejs"
+				},{
+						elem: 'nove',
+						url: "img/page-nove/cordova.png",
+						alt: "cordova",
+						class: "elements animation cordova"
 				},
 				{
 						elem: 'dez',

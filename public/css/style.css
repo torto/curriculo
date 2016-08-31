@@ -105,6 +105,7 @@ html, body {
 }
 
 /* ------- PAGE SEIS--------*/
+.page-nove .animation,
 .page-seis .letra{
   animation: letraMovimento 1s;
   animation-iteration-count: infinite;
@@ -130,6 +131,90 @@ html, body {
   padding: 0;
   margin: 0;
   background: rgba(0, 0, 0, 0.5);
+}
+
+/* ------- PAGE SEIS--------*/
+.page-nove .animation{
+  animation: letraMovimento 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  will-change: transform;
+  display: none;
+}
+.page-nove .play {
+    display: block;
+}
+
+.page-nove .java {
+  top: 5%;
+  left: 10%;
+  max-height: 150px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.page-nove .cordova {
+  top: 5%;
+  left: 85%;
+  max-height: 150px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.page-nove .angular {
+  top: 5%;
+  left: 11%;
+  max-height: 150px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.page-nove .nodejs {
+  top: 5%;
+  left: 78%;
+  max-height: 150px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.page-nove .gulp {
+  top: 46%;
+  left: 18%;
+  max-height: 150px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.page-nove .grunt {
+  top: 46%;
+  left: 5%;
+  max-height: 150px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.page-nove .html {
+  top: 46%;
+  left: 73%;
+  max-height: 150px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.page-nove .css {
+  top: 46%;
+  left: 85%;
+  max-height: 150px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 /*---------- ANIMATIONS -----------*/
@@ -171,18 +256,18 @@ html, body {
 
 @keyframes letraMovimento {
     0% {
-      transform: rotate3d(0,0,0,0deg);
+      transform: rotate(0deg);
     }
     25%{
-      transform: rotate3d(0,0,0,5deg);
+      transform: rotate(5deg);
     }
     50% {
-      transform: rotate3d(0,0,0,0deg);
+      transform: rotate(0deg);
     }
     75% {
-      transform: rotate3d(0,0,0,-5deg);
+      transform: rotate(-5deg);
     }
     100% {
-      transform: rotate3d(0,0,0,0deg);
+      transform: rotate(0deg);
     }
 }
