@@ -9,9 +9,6 @@ app.pageSeis = (function($) {
         "page": "Professor"
       });
       app.loadImagens('seis', '.page-seis');
-      setTimeout(function(){
-        // app.changePage('page-sete.html');
-      },8000);
     }
 
 

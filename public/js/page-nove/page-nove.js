@@ -9,9 +9,6 @@ app.pageNove = (function($) {
         "page": "Eu urso programador"
       });
       app.loadImagens('nove', '.page-nove');
-      setTimeout(function() {
-          // app.changePage('page-dez.html');
-      },8000);
     }
 
 

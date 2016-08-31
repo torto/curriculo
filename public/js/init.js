@@ -1,4 +1,6 @@
-var app = {};
+if(!window.app){
+	window.app = {};
+}
 (function($) {
     'use strict';
     var body, bLazy, pageCentral, oFs = {};
@@ -6,7 +8,6 @@ var app = {};
     function init() {
         initVariables();
         loadFull();
-        reloadButtons();
         preloadImages(imagens);
         $('.change-second').click(function() {
             mixpanel.track("Paginas Acessadas",{
@@ -68,6 +69,7 @@ var app = {};
                 app.pageDez.init();
                 break;
             default:
+            break;
         }
 
     }
@@ -109,10 +111,10 @@ var app = {};
     }
 
     function loadImagens(elem, classInject) {
+      var classInjectLocal = document.querySelector(classInject);
         for (var i = 0; i < imagens.length; i++) {
             if (imagens[i].elem === elem) {
-                document.querySelector(classInject)
-                    .appendChild(app.images[imagens[i].elem][imagens[i].alt]);
+                classInjectLocal.appendChild(app.images[imagens[i].elem][imagens[i].alt]);
             }
         }
     }

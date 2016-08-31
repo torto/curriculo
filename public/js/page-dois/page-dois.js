@@ -28,11 +28,6 @@ app.secondPage = (function($) {
                 duration: 2000,
                 specialEasing: {
                     width: "easeOutBounce"
-                },
-                complete: function() {
-                    // setTimeout(function() {
-                    //     app.changePage('page-tres.html');
-                    // }, 3000);
                 }
             });
         }, 4000);
@@ -49,9 +44,6 @@ app.secondPage = (function($) {
                 duration: 3000,
                 specialEasing: {
                     width: "easeOutQuart"
-                },
-                complete: function() {
-                    // Animation complete.
                 }
             });
         }, 1000 * i);

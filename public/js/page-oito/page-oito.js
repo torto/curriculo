@@ -9,9 +9,6 @@ app.pageOito = (function($) {
         "page": "Pato Branco"
       });
       app.loadImagens('oito', '.page-oito');
-      setTimeout(function(){
-        // app.changePage('page-nove.html');
-      },8000);
     }
 
 

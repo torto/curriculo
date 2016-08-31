@@ -9,11 +9,7 @@ app.pageQuatro = (function($) {
         "page": "Geografia"
       });
       app.loadImagens('quatro', '.page-quatro');
-      setTimeout(function(){
-        // app.changePage('page-cinco.html');
-      }, 6000);
     }
-
 
     return {
         init: init

@@ -1,8 +1,11 @@
-(function() {
+if(!window.app){
+	window.app = {};
+}
+(function(app) {
 
-    traducaoElements = {
+    app.traducaoElements = {
         'pt-BR': {
-            '00:00':'Oi meu nome é Guilherme, mais conhecido como Torto,',
+            '00:00': 'Oi meu nome é Guilherme, mais conhecido como Torto,',
             '00:05': 'nasci em foz do iguaçu e faço aniversário dia 25 de novembro',
             '00:08': 'DE TODO ANO, em 2016 faço 28 anos.',
             '00:12': 'Agora convido vocês a conhecerem um pouco mais sobre mim.',
@@ -69,4 +72,4 @@
         }
     };
 
-})();
+})(window.app);

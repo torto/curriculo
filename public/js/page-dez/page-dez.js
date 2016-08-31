@@ -9,9 +9,6 @@ app.pageDez = (function($) {
         "page": "Anal. Desv. Sistemas"
       });
       app.loadImagens('dez', '.page-dez');
-      setTimeout(function(){
-        // app.changePage('page-onze.html');
-      }, 6000);
     }
 
 

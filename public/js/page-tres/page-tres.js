@@ -9,12 +9,7 @@ app.pageTres = (function($) {
         "page": "Quarto criança"
       });
       app.loadImagens('tres', '.page-tres');
-      visibleMenino();
-      setTimeout(visibleMedio, 2000);
-      setTimeout(visibleVeio, 4000);
-      setTimeout(function(){
-        // app.changePage('page-quatro.html');
-      },8000);
+      
     }
 
     function visibleMenino() {

@@ -1,8 +1,20 @@
-(function() {
+if(!window.app){
+	window.app = {};
+}
+(function(app) {
 
-    changeImages = {
+    app.changeImages = {
         '00:21': function(){
 					app.changePage('page-tres.html');
+				},
+				'00:23' : function () {
+						app.pageTres.visibleMenino();
+				},
+				'00:30': function () {
+					app.pageTres.visibleMedio();
+				},
+				'00:39' : function () {
+						app.pageTres.visibleVeio();
 				},
 				'00:50': function(){
 					app.changePage('page-quatro.html');
@@ -27,4 +39,4 @@
 				}
     };
 
-})();
+})(window.app);
