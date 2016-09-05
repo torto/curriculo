@@ -45,10 +45,11 @@ if(!window.app){
 				},
 				'03:25': function(){
 					// FIREFOX
-					app.changePage('page-nove.html');
+					app.changePage('page-onze.html');
 				},
 				'03:45': function(){
 					// app.pageNove.aniElement('javascript');
+					app.changePage('page-nove.html');
 				},
 				'03:59': function(){
 					app.pageNove.aniElement('angular');

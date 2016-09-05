@@ -1,17 +1,18 @@
-if(!window.app){
-	window.app = {};
+if (!window.app) {
+    window.app = {};
 }
 (function($) {
     'use strict';
     var body, bLazy, pageCentral, oFs = {};
     app.textDefault = 'pt-BR';
+
     function init() {
         initVariables();
         loadFull();
         preloadImages(app.imagens);
         $('.change-second').click(function() {
-            mixpanel.track("Paginas Acessadas",{
-              "page": "Click Botão Inicial"
+            mixpanel.track("Paginas Acessadas", {
+                "page": "Click Botão Inicial"
             });
             app.textDefault = $('select').val() === null ? 'pt-BR' : $('select').val();
             oFs.requestFullScreen(pageCentral[0]);
@@ -26,6 +27,7 @@ if(!window.app){
             // changePage('page-oito.html');
             // changePage('page-nove.html');
             // changePage('page-dez.html');
+						// changePage('page-onze.html');
         });
     }
 
@@ -68,8 +70,11 @@ if(!window.app){
             case 'page-dez.html':
                 app.pageDez.init();
                 break;
+            case 'page-onze.html':
+                app.pageOnze.init();
+                break;
             default:
-            break;
+                break;
         }
 
     }
@@ -111,7 +116,7 @@ if(!window.app){
     }
 
     function loadImagens(elem, classInject) {
-      var classInjectLocal = document.querySelector(classInject);
+        var classInjectLocal = document.querySelector(classInject);
         for (var i = 0; i < app.imagens.length; i++) {
             if (app.imagens[i].elem === elem) {
                 classInjectLocal.appendChild(app.imagesLoad[app.imagens[i].elem][app.imagens[i].alt]);
@@ -156,7 +161,7 @@ if(!window.app){
     app.loadImagens = loadImagens;
     app.fullScreen = oFs;
     $(document).ready(function() {
-      init();
+        init();
     });
 
 })(jQuery);

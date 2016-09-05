@@ -219,6 +219,24 @@ if(!window.app){
 						url: "img/page-dez/pessoa.png",
 						alt: "pessoa",
 						class: "elements"
+				},
+				{
+						elem: 'onze',
+						url: "img/page-onze/fundo.jpg",
+						alt: "fundo",
+						class: "elements"
+				},
+				{
+						elem: 'onze',
+						url: "img/page-onze/white.png",
+						alt: "estrelas",
+						class: "elements estrelas"
+				},
+				{
+						elem: 'onze',
+						url: "img/page-onze/boneco.png",
+						alt: "boneco",
+						class: "elements"
 				}
     ];
 
