@@ -25,6 +25,9 @@ if(!window.app){
 				'01:32': function(){
 					app.changePage('page-seis.html');
 				},
+				'01:45': function() {
+					app.pageSeis.changeColor();
+				},
 				'01:52': function(){
 					app.changePage('page-sete.html');
 				},
@@ -64,6 +67,17 @@ if(!window.app){
 				'04:04': function(){
 					app.pageNove.aniElement('html');
 					app.pageNove.aniElement('css');
+				},
+				'04:17': function(){
+					app.pageNove.cleanImage();
+				},
+				'04:41': function(){
+					app.changePage('page-doze.html');
+				},
+				'05:28': function(){
+					app.fullScreen.cancelFullScreen();
+					$('.traducao').css('display', 'none');
+					app.changePage('final.html');
 				}
 
 

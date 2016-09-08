@@ -11,9 +11,13 @@ app.pageSeis = (function($) {
       app.loadImagens('seis', '.page-seis');
     }
 
+    function changeColor(){
+      $('img').addClass('black-white');
+    }
 
     return {
-        init: init
+        init: init,
+        changeColor: changeColor
     };
 
 })(jQuery);

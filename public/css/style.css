@@ -9,6 +9,13 @@ html, body {
     display: none;
 }
 
+.black-white {
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    animation: colorWhite 5s;
+}
+
 .hide {
     visibility: hidden;
 }
@@ -41,8 +48,6 @@ html, body {
 
 
 /* -------INDEX--------*/
-
-.first-page {}
 
 .ajust-buttom {
     margin-top: -180px;
@@ -249,7 +254,27 @@ html, body {
 .page-onze .estrelas {
     background: url('../img/page-onze/estrelas.png');
     background-repeat: repeat;
-    animation: starMove 1.5s linear infinite;
+    animation: starMove 4s linear infinite;
+}
+
+.page-onze .boneco {
+    animation: bonecoMovimento 6s ease-out infinite;
+}
+
+
+/* ------- PAGE FINAL--------*/
+
+#page-central {
+    height: 100%;
+}
+
+.final {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../img/page-sete/carro.gif');
+    background-size: cover;
 }
 
 
@@ -315,4 +340,65 @@ html, body {
     100% {
         transform: rotate(0deg);
     }
+}
+
+@keyframes bonecoMovimento {
+    0% {
+        transform: translate(-1500px, 500px);
+    }
+    100% {
+        transform: translate(2000px, -650px);
+    }
+}
+
+@keyframes colorWhite {
+    0% {
+        filter: none;
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    }
+    100% {
+        filter: gray;
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+    }
+}
+.collection .collection-item{
+  line-height: 2.5rem;
+}
+
+.collection .collection-item.avatar {
+    min-height: 60px;
+}
+
+.collection .collection-item.avatar i.circle {
+    line-height: 45px;
+}
+
+.collection .collection-item.avatar i.circle.facebook {
+    background-color: #3b5998;
+}
+
+.collection .collection-item.avatar i.circle.twitter {
+    background-color: #4da7de;
+}
+
+.collection .collection-item.avatar i.circle.linkedin {
+    background-color: #3371b7;
+}
+
+.collection .collection-item.avatar i.circle.github {
+    background-color: #221e1b;
+}
+
+.collection .collection-item.avatar i.circle.whatsapp {
+    background-color: #20B038;
+}
+
+.collection .collection-item.avatar i.circle.telegram {
+    background-color: #0088cc;
+}
+
+.no-margin{
+  margin: 0;
 }

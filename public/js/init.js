@@ -28,6 +28,7 @@ if (!window.app) {
             // changePage('page-nove.html');
             // changePage('page-dez.html');
 						// changePage('page-onze.html');
+            // changePage('final.html');
         });
     }
 
@@ -72,6 +73,9 @@ if (!window.app) {
                 break;
             case 'page-onze.html':
                 app.pageOnze.init();
+                break;
+            case 'page-doze.html':
+                app.pageDoze.init();
                 break;
             default:
                 break;
@@ -154,12 +158,13 @@ if (!window.app) {
             evt.cancelBubble = true;
             oFs.cancelFullScreen();
         }, false);
+
+        app.fullScreen = oFs;
     }
 
 
     app.changePage = changePage;
     app.loadImagens = loadImagens;
-    app.fullScreen = oFs;
     $(document).ready(function() {
         init();
     });
