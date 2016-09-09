@@ -53,7 +53,11 @@
         }
 
         function playAudio() {
-            audio[0].play();
+            try {
+                audio[0].play();
+            } catch (e) {
+                playAudio();
+            }
         }
 
         function formatSecondsAsTime(secs, format) {
