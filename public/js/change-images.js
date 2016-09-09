@@ -22,13 +22,13 @@ if(!window.app){
 				'01:21': function(){
 					app.changePage('page-cinco.html');
 				},
-				'01:32': function(){
+				'01:35': function(){
 					app.changePage('page-seis.html');
 				},
-				'01:45': function() {
+				'01:49': function() {
 					app.pageSeis.changeColor();
 				},
-				'01:52': function(){
+				'01:56': function(){
 					app.changePage('page-sete.html');
 				},
 				'02:22': function(){
@@ -68,7 +68,7 @@ if(!window.app){
 					app.pageNove.aniElement('html');
 					app.pageNove.aniElement('css');
 				},
-				'04:17': function(){
+				'04:09': function(){
 					app.pageNove.cleanImage();
 				},
 				'04:41': function(){

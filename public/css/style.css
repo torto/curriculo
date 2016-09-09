@@ -4,6 +4,10 @@ html, body {
     padding: 0;
     margin: 0;
 }
+.voltar-final{
+  z-index: 1;
+  position: absolute;
+}
 
 #btn-sair {
     display: none;
@@ -42,8 +46,16 @@ html, body {
 
 .language {
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     right: 10px;
+}
+
+.card-text-info {
+    position: absolute;
+    z-index: 1;
+    right: 200px;
+    width: 500px;
+    top: 100px;
 }
 
 
@@ -53,6 +65,9 @@ html, body {
     margin-top: -180px;
 }
 
+.change-second, .change-info{
+  margin-top: 10px;
+}
 
 /* -------SECOND PAGE--------*/
 
@@ -261,6 +276,48 @@ html, body {
     animation: bonecoMovimento 6s ease-out infinite;
 }
 
+/* ------- PAGE DOZE--------*/
+
+.contrate {
+  font-size: 80px;
+  color: #FFF;
+  font-family: Monoton;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+@-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
 
 /* ------- PAGE FINAL--------*/
 

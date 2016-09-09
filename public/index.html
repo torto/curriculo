@@ -5,23 +5,23 @@
 
          <meta content="Currículo do Torto - Front-end" name="title">
          <meta content="Embarque na história de um desenvolvedor aventureiro que procura um emprego legal." name="description">
-         <meta content="http://torto.github.com/curriculo/img/share.jpg" name="preview">
+         <meta content="http://torto.github.io/curriculo/img/share.jpg" name="preview">
          <!-- Twitter Card data -->
          <meta content="player" name="twitter:card">
          <meta content="Currículo do Torto - Front-end" name="twitter:title">
          <meta content="Embarque na história de um desenvolvedor aventureiro que procura um emprego legal." name="twitter:description">
-         <meta content="http://torto.github.com/curriculo/img/share.jpg" name="twitter:image">
-         <meta content="http://torto.github.com/curriculo/img/share.jpg" name="twitter:image:src">
-         <meta content="http://torto.github.com/curriculo/" name="twitter:url">
+         <meta content="http://torto.github.io/curriculo/img/share.jpg" name="twitter:image">
+         <meta content="http://torto.github.io/curriculo/img/share.jpg" name="twitter:image:src">
+         <meta content="http://torto.github.io/curriculo/" name="twitter:url">
          <!-- Open Graph data -->
          <meta content="Currículo do Torto - Front-end" property="og:title">
          <meta content="Embarque na história de um desenvolvedor aventureiro que procura um emprego legal." property="og:description">
-         <meta content="http://torto.github.com/curriculo/" property="og:url">
-         <meta content="http://torto.github.com/curriculo/img/share.jpg" property="og:image">
+         <meta content="http://torto.github.io/curriculo/" property="og:url">
+         <meta content="http://torto.github.io/curriculo/img/share.jpg" property="og:image">
          <!-- g+ -->
          <meta content="Currículo do Torto - Front-end" itemprop="name">
          <meta content="Embarque na história de um desenvolvedor aventureiro que procura um emprego legal." itemprop="description">
-         <meta content="http://torto.github.com/curriculo/img/share.jpg" itemprop="image">
+         <meta content="http://torto.github.io/curriculo/img/share.jpg" itemprop="image">
 
         <title>Curriculo Torto</title>
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -29,12 +29,15 @@
         <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css" charset="utf-8">
         <!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
 0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
 for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
 mixpanel.init("da3d5b698bb0c20eb4ac52eb00a6e388");</script><!-- end Mixpanel -->
-
+<script type="text/javascript">
+  mixpanel.track("Video play");
+</script>
     </head>
     <body>
         <button id="btn-sair">Sair do modo full screen</button>
@@ -47,15 +50,27 @@ mixpanel.init("da3d5b698bb0c20eb4ac52eb00a6e388");</script><!-- end Mixpanel -->
                         <option value="en">English</option>
                     </select>
                 </div>
+
+                  <div class="card-panel blue darken-1 card-text-info">
+                    <span class="white-text">Para a experiência ficar melhor, aconselho você aumentar o volume do seu computador a um nível agradavél. Tio Torto agradece.
+                    </span>
+                    <div class="col s6 offset-s3">
+                        <a class="waves-effect waves-light btn-large full-button red lighten-3 darken-2 change-second">Começar a aventura</a>
+                    </div>
+                    <div class="col s6 offset-s3">
+                        <a class="waves-effect waves-light btn full-button light-blue darken-4 change-info">Informações do Torto</a>
+                    </div>
+                  </div>
+
                 <img class="elements relative" src="img/apresentacao/fundo.jpg" alt="init"/>
                 <img class="elements" src="img/apresentacao/tortinhu.gif" alt="init"/>
-                <div class="container ajust-buttom">
+                <!-- <div class="container ajust-buttom">
                     <div class="row">
                         <div class="col s6 offset-s3">
                             <a class="waves-effect waves-light btn-large full-button green darken-2 change-second">Começar a aventura</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="traducao">
@@ -64,7 +79,7 @@ mixpanel.init("da3d5b698bb0c20eb4ac52eb00a6e388");</script><!-- end Mixpanel -->
                 </p>
             </div>
         </div>
-        <audio id="audioTrack" controls="true" src="audio/com-musica-compress.ogg" style="z-index: 1000; position: absolute;top:0;" ontimeupdate="app.audio.updateListenerMusic(this);"></audio>
+        <audio id="audioTrack" src="audio/com-musica-compress.ogg" style="z-index: 1000; position: absolute;top:0;" ontimeupdate="app.audio.updateListenerMusic(this);"></audio>
 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>

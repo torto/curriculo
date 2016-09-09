@@ -28,8 +28,12 @@ if (!window.app) {
             // changePage('page-nove.html');
             // changePage('page-dez.html');
 						// changePage('page-onze.html');
+            // changePage('page-doze.html');
             // changePage('final.html');
         });
+          $('.change-info').click(function() {
+            changePage('final.html');
+          });
     }
 
     function initVariables() {

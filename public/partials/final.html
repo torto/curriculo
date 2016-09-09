@@ -1,3 +1,6 @@
+<div class="voltar-final">
+	<a href="" class="waves-effect pink lighten-1 btn">Voltar</a>
+</div>
 <div class="final">
     <div class="container">
         <div class="row no-margin">
@@ -36,6 +39,10 @@
                                 <span class="title"><a href="https://github.com/torto">Github</a></span>
                             </li>
 														<li class="collection-item avatar">
+                                <i class="socicon-github circle github"></i>
+                                <span class="title"><a href="https://torto.github.io/">Blog no Github.io</a></span>
+                            </li>
+														<li class="collection-item avatar">
                                 <i class="socicon-mail circle red darken-3"></i>
                                 <span class="title">tortoyoyo@gmail.com</span>
                             </li>
@@ -54,10 +61,20 @@
         </div>
 <div class="row">
 	<div class="col s8 offset-s2">
-			<span class="center-align white-text"><p class="no-margin">Imagens feitas pela minha amiga linda e amada Débora Dias - <a class="white-text" href="https://www.facebook.com/debediasf">Facebook</a> - <a class="white-text" href="http://www.debedias.tumblr.com/">Tumblr</a></p></span>
+			<span class="center-align white-text"><p class="no-margin">As ilustrações foram feitas pela minha amiga linda e amada Debora Dias - <a class="white-text" href="https://www.facebook.com/debediasf">Facebook</a> - <a class="white-text" href="http://www.debedias.tumblr.com/">Tumblr</a></p></span>
 	</div>
 </div>
 
     </div>
 
 </div>
+
+<script type="text/javascript">
+	mixpanel.track("Paginas Acessadas",{
+		"page": "Final"
+	});
+
+	$('.voltar-final').on('click', function(){
+		 location.reload();
+	})
+</script>
