@@ -5,9 +5,6 @@ if (!app) {
 app.pageNove = (function($) {
 
     function init() {
-      mixpanel.track("Paginas Acessadas",{
-        "page": "Eu urso programador"
-      });
       app.loadImagens('nove', '.page-nove');
       cleanImage();
     }

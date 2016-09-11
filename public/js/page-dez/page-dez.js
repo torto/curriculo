@@ -5,9 +5,6 @@ if (!app) {
 app.pageDez = (function($) {
 
     function init() {
-      mixpanel.track("Paginas Acessadas",{
-        "page": "Anal. Desv. Sistemas"
-      });
       app.loadImagens('dez', '.page-dez');
     }
 

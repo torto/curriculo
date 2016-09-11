@@ -5,11 +5,8 @@ if (!app) {
 app.pageTres = (function($) {
 
     function init() {
-      mixpanel.track("Paginas Acessadas",{
-        "page": "Quarto criança"
-      });
       app.loadImagens('tres', '.page-tres');
-      
+
     }
 
     function visibleMenino() {

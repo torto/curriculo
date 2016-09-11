@@ -5,10 +5,7 @@ if (!app) {
 app.pageOnze = (function($) {
 
     function init() {
-      mixpanel.track("Paginas Acessadas",{
-        "page": "Firefox"
-      });
-      app.loadImagens('onze', '.page-onze');
+        app.loadImagens('onze', '.page-onze');
     }
 
 

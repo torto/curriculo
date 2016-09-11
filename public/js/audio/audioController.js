@@ -53,7 +53,9 @@
         }
 
         function playAudio() {
+            var source = audio[0].baseURI + 'audio/com-musica-compress.ogg';
             try {
+                audio[0].src = source;
                 audio[0].play();
             } catch (e) {
                 playAudio();

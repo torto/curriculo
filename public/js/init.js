@@ -11,9 +11,6 @@ if (!window.app) {
         loadFull();
         preloadImages(app.imagens);
         $('.change-second').click(function() {
-            mixpanel.track("Paginas Acessadas", {
-                "page": "Click Botão Inicial"
-            });
             app.textDefault = $('select').val() === null ? 'pt-BR' : $('select').val();
             oFs.requestFullScreen(pageCentral[0]);
             $('.traducao').css('display', 'block');
@@ -34,13 +31,14 @@ if (!window.app) {
           $('.change-info').click(function() {
             changePage('final.html');
           });
+
+          $('select').material_select();
     }
 
     function initVariables() {
         app.imagesLoad = {};
         body = $('body');
         pageCentral = $('#page-central');
-        $('select').material_select();
     }
 
     function reloadButtons(page) {
@@ -89,7 +87,7 @@ if (!window.app) {
 
     function removePage(callback) {
         $('.page').hide("slow", function() {
-            this.remove();
+            $('.page').remove();
             callback();
         });
     }
@@ -118,7 +116,7 @@ if (!window.app) {
             }
             app.imagesLoad[array[i].elem][array[i].alt] = new Image();
             app.imagesLoad[array[i].elem][array[i].alt].src = array[i].url;
-            app.imagesLoad[array[i].elem][array[i].alt].className = array[i].class;
+            app.imagesLoad[array[i].elem][array[i].alt].className = array[i].elemClass;
             app.imagesLoad[array[i].elem][array[i].alt].alt = array[i].alt;
         }
     }

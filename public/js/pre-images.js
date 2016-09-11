@@ -4,251 +4,251 @@ if(!window.app){
 (function() {
 
     app.imagens = [
-        // {elem, url, alt, classs}
+        // {elem, url, alt, elemClasss}
         {
             elem: 'dois',
             url: "img/page-dois/fundo.jpg",
             alt: "fundo",
-            class: "elements"
+            elemClass: "elements"
         },
 				{
             elem: 'dois',
             url: "img/page-dois/cavalo.png",
             alt: "cavalo",
-            class: "me-horse"
+            elemClass: "me-horse"
         },
 				{
             elem: 'dois',
             url: "img/page-dois/omundo.png",
             alt: "o mundo",
-            class: "text o-mundo"
+            elemClass: "text o-mundo"
         },
 				{
             elem: 'dois',
             url: "img/page-dois/encantado.png",
             alt: "encantado",
-            class: "text encantado"
+            elemClass: "text encantado"
         },
 				{
             elem: 'dois',
             url: "img/page-dois/de.png",
             alt: "de",
-            class: "text de"
+            elemClass: "text de"
         },
 				{
             elem: 'dois',
             url: "img/page-dois/tortolandia.png",
             alt: "tortolandia",
-            class: "text tortolandia"
+            elemClass: "text tortolandia"
         },
 				{
             elem: 'tres',
             url: "img/page-tres/fundo.gif",
             alt: "quarto",
-            class: "elements"
+            elemClass: "elements"
         },
         {
 						elem: 'tres',
 						url: "img/page-tres/menino.png",
 						alt: "menino",
-						class: "elements animation menino"
+						elemClass: "elements animation menino"
 				},
 				{
 						elem: 'tres',
 						url: "img/page-tres/videogame.png",
 						alt: "mediano",
-						class: "elements animation medio"
+						elemClass: "elements animation medio"
 				},
 				{
 						elem: 'tres',
 						url: "img/page-tres/revista.png",
 						alt: "veio",
-						class: "elements animation veio"
+						elemClass: "elements animation veio"
 				},
 				{
 						elem: 'quatro',
 						url: "img/page-quatro/fundo.jpg",
 						alt: "fundo",
-						class: "elements"
+						elemClass: "elements"
 				},
 				{
 						elem: 'quatro',
 						url: "img/page-quatro/chapeu.png",
 						alt: "chapeu",
-						class: "elements chapeu"
+						elemClass: "elements chapeu"
 				},
 				{
 						elem: 'quatro',
 						url: "img/page-quatro/pessoa.png",
 						alt: "pessoa",
-						class: "elements"
+						elemClass: "elements"
 				},
 				{
 						elem: 'cinco',
 						url: "img/page-cinco/fundo.jpg",
 						alt: "fundo",
-						class: "elements"
+						elemClass: "elements"
 				},
 				{
 						elem: 'cinco',
 						url: "img/page-cinco/mapa.gif",
 						alt: "mapa",
-						class: "elements mapa"
+						elemClass: "elements mapa"
 				},
 				{
 						elem: 'cinco',
 						url: "img/page-cinco/animacao.gif",
 						alt: "animacao",
-						class: "elements mapa"
+						elemClass: "elements mapa"
 				},
 				{
 						elem: 'seis',
 						url: "img/page-seis/fundo.jpg",
 						alt: "fundo",
-						class: "elements"
+						elemClass: "elements"
 				},
 				{
 						elem: 'seis',
 						url: "img/page-seis/letra.png",
 						alt: "letra",
-						class: "elements letra"
+						elemClass: "elements letra"
 				},
 				{
 						elem: 'sete',
 						url: "img/page-sete/carro.gif",
 						alt: "carro",
-						class: "elements"
+						elemClass: "elements"
 				},
 				{
 						elem: 'oito',
 						url: "img/page-oito/fundo.jpg",
 						alt: "fundo",
-						class: "elements"
+						elemClass: "elements"
 				},
 				{
 						elem: 'oito',
 						url: "img/page-oito/mapa.png",
 						alt: "mapa",
-						class: "elements mapa"
+						elemClass: "elements mapa"
 				},
 				{
 						elem: 'oito',
 						url: "img/page-oito/animacao.gif",
 						alt: "animacao",
-						class: "elements mapa"
+						elemClass: "elements mapa"
 				},
 				{
 						elem: 'nove',
 						url: "img/page-nove/fundo.jpg",
 						alt: "fundo",
-						class: "elements"
+						elemClass: "elements"
 				},
 				{
 						elem: 'nove',
 						url: "img/page-nove/animacao.gif",
 						alt: "animacao",
-						class: "elements"
+						elemClass: "elements"
 				},
         {
 						elem: 'nove',
 						url: "img/page-nove/angular.png",
 						alt: "angular",
-						class: "elements animation angular"
+						elemClass: "elements animation angular"
 				},
         {
 						elem: 'nove',
 						url: "img/page-nove/css.png",
 						alt: "css",
-						class: "elements animation css"
+						elemClass: "elements animation css"
 				},
         {
 						elem: 'nove',
 						url: "img/page-nove/grunt.png",
 						alt: "grunt",
-						class: "elements animation grunt"
+						elemClass: "elements animation grunt"
 				},
         {
 						elem: 'nove',
 						url: "img/page-nove/gulp.png",
 						alt: "gulp",
-						class: "elements animation gulp"
+						elemClass: "elements animation gulp"
 				},
         {
 						elem: 'nove',
 						url: "img/page-nove/html.png",
 						alt: "html",
-						class: "elements animation html"
+						elemClass: "elements animation html"
 				},
         {
 						elem: 'nove',
 						url: "img/page-nove/java.png",
 						alt: "java",
-						class: "elements animation java"
+						elemClass: "elements animation java"
 				},
         {
 						elem: 'nove',
 						url: "img/page-nove/javascript.png",
 						alt: "javascript",
-						class: "elements animation javascript"
+						elemClass: "elements animation javascript"
 				},
         {
 						elem: 'nove',
 						url: "img/page-nove/nodejs.png",
 						alt: "nodejs",
-						class: "elements animation nodejs"
+						elemClass: "elements animation nodejs"
 				},{
 						elem: 'nove',
 						url: "img/page-nove/cordova.png",
 						alt: "cordova",
-						class: "elements animation cordova"
+						elemClass: "elements animation cordova"
 				},
 				{
 						elem: 'dez',
 						url: "img/page-dez/fundo.jpg",
 						alt: "fundo",
-						class: "elements"
+						elemClass: "elements"
 				},
 				{
 						elem: 'dez',
 						url: "img/page-quatro/chapeu.png",
 						alt: "chapeu",
-						class: "elements chapeu"
+						elemClass: "elements chapeu"
 				},
 				{
 						elem: 'dez',
 						url: "img/page-dez/pessoa.png",
 						alt: "pessoa",
-						class: "elements"
+						elemClass: "elements"
 				},
 				{
 						elem: 'onze',
 						url: "img/page-onze/fundo.jpg",
 						alt: "fundo",
-						class: "elements"
+						elemClass: "elements"
 				},
 				{
 						elem: 'onze',
 						url: "img/page-onze/white.png",
 						alt: "estrelas",
-						class: "elements estrelas"
+						elemClass: "elements estrelas"
 				},
 				{
 						elem: 'onze',
 						url: "img/page-onze/boneco.png",
 						alt: "boneco",
-						class: "elements boneco"
+						elemClass: "elements boneco"
 				},
 				{
 						elem: 'doze',
 						url: "img/apresentacao/fundo.jpg",
 						alt: "fundo",
-						class: "elements"
+						elemClass: "elements"
 				},
 				{
 						elem: 'doze',
 						url: "img/apresentacao/tortinhu.gif",
 						alt: "tortinhu",
-						class: "elements"
+						elemClass: "elements"
 				}
     ];
 

@@ -71,8 +71,8 @@ if(!window.app){
             '05:25': 'trabalhar remoto não será um problema.'
         },
 				'en': {
-            '00:00': 'Oi meu nome é Guilherme, mais conhecido como Torto,',
-            '00:05': 'nasci em Foz do Iguaçu e faço aniversário dia 25 de novembro',
+            '00:00': 'Hi my name is Guilherme, better knowas Torto',
+            '00:05': 'I was born in Foz do Iguaçu and my birthday is in November 25th',
             '00:10': 'DE TODO ANO, em 2016 faço 28 anos.',
             '00:13': 'Agora convido vocês a conhecerem um pouco mais sobre mim.',
             '00:17': 'Bem vindos ao mundo encantado de Tortolândia',

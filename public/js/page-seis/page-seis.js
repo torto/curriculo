@@ -5,9 +5,6 @@ if (!app) {
 app.pageSeis = (function($) {
 
     function init() {
-      mixpanel.track("Paginas Acessadas",{
-        "page": "Professor"
-      });
       app.loadImagens('seis', '.page-seis');
     }
 
