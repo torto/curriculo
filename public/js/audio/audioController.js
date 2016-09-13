@@ -58,7 +58,13 @@
                 audio[0].src = source;
                 audio[0].play();
             } catch (e) {
-                playAudio();
+                try {
+                  source = audio[0].baseURI + 'audio/com-musica-compress.mp3';
+                  audio[0].src = source;
+                  audio[0].play();
+                } catch (e) {
+                    playAudio();
+                }
             }
         }
 
