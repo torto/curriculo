@@ -137,8 +137,8 @@ if (!window.app) {
             "05:25": "working remotely will not be a burden."
         },
         "es": {
-            "00:00": "Hola mi nombre es Guilherme, mejor conecido como Torto",
-            "00:05": "nací en Foz de Iguazu y cumplo anos el 25 de noviembre",
+            "00:00": "Hola mi nombre es Guilherme, mejor conocido como Torto",
+            "00:05": "nací en Foz de Iguazu y cumplo años el 25 de noviembre",
             "00:10": "en 2016 cumplo 28 años",
             "00:13": "Ahora los invito a saber un poco más sobre de mi",
             "00:17": "Bienvenidos al mundo encantado de Tortolândia ",
@@ -166,7 +166,7 @@ if (!window.app) {
             "02:10": "y se dió cuenta de que no cambiaría casi nada, ",
             "02:14": "entonces en una actitud audaz decidió cambiar y hacer lo que más le gustaba en la vida:",
             "02:20": "PROGRAMAR <span style=\"color:red;font-weight: bold;\"><3</span>",
-            "02:25": "Hijo de profesor, (y aun sin querer un eterno enamorado de la educación) ",
+            "02:25": "Hijo de profesor, (y aún sin querer un eterno enamorado de la educación) ",
             "02:30": "Torto no se contentó en cambiar de vida sin hacer otro curso en la facultad",
             "02:35": "y así hizo Análisis y Desarrollo de Sistemas en la Universidad",
             "02:40": "Tecnologica Federal de Paraná en el Campus de Pato Branco ",
@@ -180,7 +180,7 @@ if (!window.app) {
             "03:25": "En este tiempo Torto ha estrechado sus lazos con la comunidad del Mozilla",
             "03:31": "en la cual hasta hoy está presente asiduamente. ",
             "03:38": "Con el paso del tiempo Torto resuelve cambiar de nuevo",
-            "03:43": "y centra sus fuerzas en el estudo de JS, fué en esto tiempo que el entró a otra empresa ",
+            "03:43": "y centra sus fuerzas en el estudio de JS, fué en esto tiempo que el entró a otra empresa ",
             "03:50": "llamada \"ContaAzul\" donde trabajó con tecnologías centradas de front-end y back-end en js",
             "03:58": "como: AngularJS, NodeJS, Gulp, Grunt, HTML5 e CSS3.",
             "04:10": "Este joven, en ese largo camino, aprendió muchas cosas, ",
