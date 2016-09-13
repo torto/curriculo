@@ -4,6 +4,7 @@
   "description": "",
   "main": "js/init.js",
   "scripts": {
+    "install": "bower install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "torto",
