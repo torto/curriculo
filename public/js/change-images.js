@@ -60,12 +60,16 @@ if(!window.app){
 				'04:00': function(){
 					app.pageNove.aniElement('nodejs');
 				},
-				'04:01': function(){
+				'04:02': function(){
 					app.pageNove.aniElement('gulp');
+				},
+				'04:03': function(){
 					app.pageNove.aniElement('grunt');
 				},
 				'04:04': function(){
 					app.pageNove.aniElement('html');
+				},
+				'04:06': function(){
 					app.pageNove.aniElement('css');
 				},
 				'04:09': function(){

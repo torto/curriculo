@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .voltar-final {
@@ -57,17 +58,6 @@ html, body {
     right: 200px;
     width: 500px;
     top: 100px;
-}
-
-@media (max-width: 799px) {
-    .card-text-info {
-        position: absolute;
-        z-index: 1;
-        right: 0px;
-        width: 100%;
-        top: inherit;
-        bottom: 0px;
-    }
 }
 
 
@@ -474,4 +464,35 @@ html, body {
 
 .no-margin {
     margin: 0;
+}
+
+@media (max-width: 799px) {
+    .card-text-info {
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        width: 100%;
+        top: inherit;
+        bottom: 0px;
+    }
+    .page-nove .java, .page-nove .cordova, .page-nove .angular, .page-nove .nodejs, .page-nove .gulp, .page-nove .grunt, .page-nove .html, .page-nove .css {
+        top: 4%;
+        left: 60%;
+        max-height: 100px;
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+    }
+
+    .traducao{
+      max-width: 100%;
+      padding: 10px;
+      top: 85%;
+    }
+
+    .contrate {
+      font-size: 21px;
+      top: 10%;
+    }
 }

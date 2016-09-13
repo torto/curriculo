@@ -155,30 +155,39 @@ if(!window.app){
 						alt: "angular",
 						elemClass: "elements animation angular"
 				},
+				{
+						elem: 'nove',
+						url: "img/page-nove/nodejs.png",
+						alt: "nodejs",
+						elemClass: "elements animation nodejs"
+				},
+				{
+						elem: 'nove',
+						url: "img/page-nove/gulp.png",
+						alt: "gulp",
+						elemClass: "elements animation gulp"
+				},
+				{
+						elem: 'nove',
+						url: "img/page-nove/grunt.png",
+						alt: "grunt",
+						elemClass: "elements animation grunt"
+				},
+				{
+						elem: 'nove',
+						url: "img/page-nove/html.png",
+						alt: "html",
+						elemClass: "elements animation html"
+				},
         {
 						elem: 'nove',
 						url: "img/page-nove/css.png",
 						alt: "css",
 						elemClass: "elements animation css"
 				},
-        {
-						elem: 'nove',
-						url: "img/page-nove/grunt.png",
-						alt: "grunt",
-						elemClass: "elements animation grunt"
-				},
-        {
-						elem: 'nove',
-						url: "img/page-nove/gulp.png",
-						alt: "gulp",
-						elemClass: "elements animation gulp"
-				},
-        {
-						elem: 'nove',
-						url: "img/page-nove/html.png",
-						alt: "html",
-						elemClass: "elements animation html"
-				},
+
+
+
         {
 						elem: 'nove',
 						url: "img/page-nove/java.png",
@@ -191,12 +200,7 @@ if(!window.app){
 						alt: "javascript",
 						elemClass: "elements animation javascript"
 				},
-        {
-						elem: 'nove',
-						url: "img/page-nove/nodejs.png",
-						alt: "nodejs",
-						elemClass: "elements animation nodejs"
-				},{
+				{
 						elem: 'nove',
 						url: "img/page-nove/cordova.png",
 						alt: "cordova",
