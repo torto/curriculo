@@ -10,7 +10,21 @@
 
         function init() {
             loadVariables();
+            checkAudios();
 
+        }
+
+        function checkAudios() {
+            var source = "";
+            var status = audio[0].canPlayType('audio/ogg');
+            if (!status) {
+                source = audio[0].baseURI + 'audio/com-musica-compress.mp3';
+            } else if (status == 'probably' || status == 'maybe') {
+                source = audio[0].baseURI + 'audio/com-musica-compress.ogg';
+            } else {
+                source = audio[0].baseURI + 'audio/com-musica-compress.mp3';
+            }
+            audio[0].src = source;
         }
 
         function loadVariables() {
@@ -53,19 +67,7 @@
         }
 
         function playAudio() {
-            var source = audio[0].baseURI + 'audio/com-musica-compress.ogg';
-            try {
-                audio[0].src = source;
-                audio[0].play();
-            } catch (e) {
-                try {
-                  source = audio[0].baseURI + 'audio/com-musica-compress.mp3';
-                  audio[0].src = source;
-                  audio[0].play();
-                } catch (e) {
-                    playAudio();
-                }
-            }
+            audio[0].play();
         }
 
         function formatSecondsAsTime(secs, format) {
