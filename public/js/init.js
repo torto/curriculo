@@ -11,11 +11,12 @@ if (!window.app) {
         loadFull();
         preloadImages(app.imagens);
         $('.change-second').click(function() {
-            app.textDefault = $('select').val() === null ? 'pt-BR' : $('select').val();
             oFs.requestFullScreen(pageCentral[0]);
-            $('.traducao').css('display', 'block');
-            changePage('second-page.html');
-            app.audio.playAudio();
+            app.audio.playAudio(function() {
+                app.textDefault = $('select').val() === null ? 'pt-BR' : $('select').val();
+                $('.traducao').css('display', 'block');
+                changePage('second-page.html');
+            });
             // changePage('page-tres.html');
             // changePage('page-quatro.html');
             // changePage('page-cinco.html');
@@ -24,15 +25,15 @@ if (!window.app) {
             // changePage('page-oito.html');
             // changePage('page-nove.html');
             // changePage('page-dez.html');
-						// changePage('page-onze.html');
+            // changePage('page-onze.html');
             // changePage('page-doze.html');
             // changePage('final.html');
         });
-          $('.change-info').click(function() {
+        $('.change-info').click(function() {
             changePage('final.html');
-          });
+        });
 
-          $('select').material_select();
+        $('select').material_select();
     }
 
     function initVariables() {
